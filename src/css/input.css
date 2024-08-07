@@ -15,16 +15,16 @@
         @apply w-[40px] h-[40px] bg-white rounded-full shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_10px_rgba(255,255,255)] flex justify-center items-center dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)]
     }
     .shadow-sosmed{
-        @apply hover:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(245,250,228)] 
+        @apply hover:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(255,255,255)] 
         dark:hover:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
     }
 
     /* Skills Start */
     .outside-bar{
-        @apply h-[120px] w-[120px] rounded-[50%] border-[1px] border-solid dark:border-dark-color p-[20px] shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(245,250,228)] dark:shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
+        @apply h-[120px] w-[120px] rounded-[50%] border-[1px] border-solid dark:border-dark-color p-[20px] shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(255,255,255)] dark:shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
     }
     .round-bar{
-        @apply h-[80px] w-[80px] rounded-[50%] border-[1px] border-solid dark:border-dark-color shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(245,250,228)] flex justify-center items-center dark:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
+        @apply h-[80px] w-[80px] rounded-[50%] border-[1px] border-solid dark:border-dark-color shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(255,255,255)] flex justify-center items-center dark:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
     }
     /* Skill End */
 
