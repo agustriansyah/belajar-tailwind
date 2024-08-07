@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT-GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?marginfamily=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+
+ <!-- <style>
+    *{
+        border: 2px solid red;
+    }
+ </style> -->
+
+
+
+</head>
+<body class="dark:bg-dark-color">
+    <!-- header start -->
+     <header class="bg-transparent absolute top-0 left-0 w-full z-10 flex items-center">
+        <div class="container z-10">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <h1 class="font-bold text-xl py-4 font-poppins block dark:text-white">Astri<span class="text-cyan-800 dark:text-cyan-300">AR</span></h1>
+                </div>
+                <div class="flex items-center justify-center px-4">
+                    <button id="arrow" name="arrow" type="button " class="block absolute lg:hidden">
+                        
+                        <i class="fa-solid fa-chevron-down text-xl transition duration-300 ease-in-out dark:text-white"></i>
+                        
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_10px_rgba(245,250,228)] dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] rounded-lg max-w-[250px] w-full top-[65px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark-color dark:lg:bg-transparent dark:lg:shadow-none">
+                        <ul class="flex flex-col lg:flex-row text-center">
+                            <li class="group py-2 lg:mx-8">
+                                <a href="#home " class=" text-sm font-poppins font-semibold group-hover:text-cyan-800 dark:text-white dark:group-hover:text-cyan-300">Home</a>
+                            </li>
+                            <li class="group py-2 lg:mx-8">
+                                <a href="#home " class=" text-sm font-poppins font-semibold group-hover:text-cyan-800 dark:text-white dark:group-hover:text-cyan-300">About</a>
+                            </li>
+                            <li class="group py-2 lg:mx-8">
+                                <a href="#home " class=" text-sm font-poppins font-semibold group-hover:text-cyan-800 dark:text-white dark:group-hover:text-cyan-300">Portfolio</a>
+                            </li>
+                            <li class="group py-2 lg:mx-8">
+                                <a href="#home " class=" text-sm font-poppins font-semibold group-hover:text-cyan-800 dark:text-white dark:group-hover:text-cyan-300">Service</a>
+                            </li>
+                            <li class="group py-2 lg:mx-8">
+                                <a href="#home " class=" text-sm font-poppins font-semibold group-hover:text-cyan-800 dark:text-white dark:group-hover:text-cyan-300">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="px-4">
+                    <div class="py-4">
+                        <div class="flex items-center rounded-[45px] bg-[#fff] w-[60px] h-[30px] shadow-custom-inset px-1 relative cursor-pointer" id="btn">
+                            <div class="bg-[#fff] w-[25px] h-[25px] rounded-[50%] absoluet shadow-[0_4px_6px_0_rgba(0,0,0,0.2)] duration-500" id="btn_indicator">
+                                <div class=" w-full h-full flex items-center justify-center " >
+                                    <i class="fa-solid fa-sun animate-spin icon-sun" id="btn_icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </header>
+     <!-- header end -->
+
+
+    <!-- hero section start -->
+     <section id="home" class="pt-36 ">
+        <div class="container ">
+            <div class="flex flex-wrap ">
+                <div class="w-full self-center flex flex-col px-4 lg:w-1/2 md:content-center md:items-center">
+                    <h1 class="text-base font-poppins font-bold text-black mt-1 md:text-xl md:text-center dark:text-white">Hello Friend 😎, I'ts Me <span class="block font-bold text-3xl text-cyan-800 mb-1 md:text-5xl md:mb-2 md:text-center lg:text-6xl dark:text-cyan-300">Agus Triansyah</span>
+                    </h1>
+                    <h2 class=" text-sm mb-5 text-black lg:text-3xl font-montserrat font-bold md:text-2xl dark:text-white">
+                        And I'm a <span class="web-developer font-bold dark:text-cyan-300">Web Developer</span>
+                    </h2>
+                    <p class=" text-xs  text-black font-semibold mb-10 lg:text-sm md:text-center dark:text-white">I’m a high school student specializing in Network Engineering, Computer Science, and Telecommunications. Recently, I’ve started learning programming languages to expand my technical skills and enhance my understanding of software development.</p>
+                    <ul class="flex mb-4">
+                        <li class="sosial_media mr-2 group shadow-sosmed dark:bg-dark-color">
+                            <a href="" class="group-hover:text-cyan-800 "><i class="fa-brands fa-instagram dark:text-white dark:group-hover:text-cyan-300"></i></a>
+                        </li>
+                        <li class="sosial_media mr-2 group shadow-sosmed dark:bg-dark-color">
+                            <a href="" class="group-hover:text-cyan-800 "><i class="fa-brands fa-facebook dark:text-white dark:group-hover:text-cyan-300"></i></a>
+                        </li>
+                        <li class="sosial_media mr-2 group shadow-sosmed dark:bg-dark-color">
+                            <a href="" class="group-hover:text-cyan-800"><i class="fa-brands fa-linkedin dark:text-white dark:group-hover:text-cyan-300"></i></a>
+                        </li>
+                        <li class=" sosial_media mr-2 group shadow-sosmed dark:bg-dark-color">
+                            <a href="" class="group-hover:text-cyan-800"><i class="fa-brands fa-github dark:text-white dark:group-hover:text-cyan-300"></i></a>
+                        </li>
+                    </ul>
+                    <button class=" relative max-w-[120px] border-cyan-800 rounded-[5px] px-6 py-2 text-cyan-800 overflow-hidden font-montserrat cursor-pointer font-bold text-xs shadow-[2px_2px_2px_rgba(0,0,0,0.3),-3px_-3px_2px_rgba(245,250,228)] hire-me dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] dark:text-cyan-300">
+                        Hire Me
+                    </button>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="mt-10">
+                        <img src="./asset/bruno_mars.png" alt="bruno_mars" class="max-w-full mx-auto  ">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- hero section end -->
+
+
+    <!-- about section start -->
+     <section id="about" class="pt-36 pb-32 ">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h1 class="text-2xl mb-3 font-bold text-cyan-800 lg:text-3xl font-poppins dark:text-cyan-300">About Me</h1>
+                    <h3><span class="block font-bold text-2xl text-black lg:text-4xl font-poppins mb-5 dark:text-white">I'm Web Developer</h3>
+                        <p class=" font-inter text-sm font-basetext-black lg:pr-10 dark:text-white">Hi, I’m <span class="font-bold">Agus Triansyah Ar</span>, a creative individual with a passion for bringing ideas to life through technology. I have a knack for design and a deep interest in tech innovations, always exploring new ways to enhance user experiences. While I’m comfortable with basic coding, I often find myself needing a bit more expertise to fully realize my projects.
+                            <br><br>
+                            I’m currently on the lookout for a programmer friend who shares my enthusiasm for technology and is excited about collaborating on interesting projects. Whether it’s building a mobile app, experimenting with new tools, or tackling complex challenges, I believe that teamwork can make any idea better.
+                            <br><br>
+                            If you’re a programmer who enjoys working on creative projects and values collaboration, I’d love to connect and see how we can turn ideas into reality together. </p>
+                        <button class="relative border-cyan-800 rounded-[5px] px-6 py-2 text-cyan-800 overflow-hidden font-montserrat cursor-pointer duration-700 font-bold text-xs shadow-[2px_2px_2px_rgba(0,0,0,0.3),-3px_-3px_2px_rgba(245,250,228)] hire-me mt-5 dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-3px_-3px_2px_rgba(0,0,0,0.3)] dark:text-cyan-300">Download CV</button>
+                </div>
+                <div class="w-full px-4 mb-10 lg:w-1/2 ">
+                    <h3 class="text-2xl font-bold text-black lg:text-4xl font-poppins lg:pt-10 dark:text-white">Skills I Have</h3>
+                <div class=" mt-5 flex flex-wrap justify-between">
+                    <div class="w-[120px] h-[120px] relative mb-8">
+                        <div class="outside-bar">
+                            <div class="round-bar">
+                                <div class="font-semibold text-xl text-cyan-800 font-poppins dark:text-cyan-300">85%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px" class="absolute top-0 left-0  ">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#0e7490" />
+                                  <stop offset="100%" stop-color="#67e8f9" />
+                               </linearGradient>
+                            </defs>
+                            <circle cx="61" cy="61" r="49" stroke-linecap="round" class="fill-none stroke-[20px] stroke-[url(#GradientColor)] stroke-dashed "/>
+                        </svg>
+                        <h4 class="text-center mt-1 font-semibold font-montserrat dark:text-white">HTML</h4>
+                    </div>
+                    <div class="w-[120px] h-[120px] relative">
+                        <div class="outside-bar">
+                            <div class="round-bar">
+                                <div class="font-semibold text-xl text-cyan-800 font-poppins dark:text-cyan-300">65%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px" class="absolute top-0 left-0">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#e91e63" />
+                                  <stop offset="100%" stop-color="#673ab7" />
+                               </linearGradient>
+                            </defs>
+                            <circle cx="61" cy="61" r="49" stroke-linecap="round" class="fill-none stroke-[20px] stroke-[url(#GradientColor)] stroke-dashed1"/>
+                        </svg>
+                        <h4 class="text-center mt-1 font-semibold font-montserrat dark:text-white">CSS</h4>
+                    </div>
+                    <div class="w-[120px] h-[120px] relative ">
+                        <div class="outside-bar">
+                            <div class="round-bar">
+                                <div class="font-semibold text-xl text-cyan-800 font-poppins dark:text-cyan-300">50%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px" class="absolute top-0 left-0">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#e91e63" />
+                                  <stop offset="100%" stop-color="#673ab7" />
+                               </linearGradient>
+                            </defs>
+                            <circle cx="61" cy="61" r="49" stroke-linecap="round" class="fill-none stroke-[20px] stroke-[url(#GradientColor)] stroke-dashed2"/>
+                        </svg>
+                        <h4 class="text-center mt-1 font-semibold font-montserrat dark:text-white">Tailwind</h4>
+                    </div>
+                    <div class="w-[120px] h-[120px] relative ">
+                        <div class="outside-bar">
+                            <div class="round-bar">
+                                <div class="font-semibold text-xl text-cyan-800 font-poppins dark:text-cyan-300">10%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px" class="absolute top-0 left-0">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#e91e63" />
+                                  <stop offset="100%" stop-color="#673ab7" />
+                               </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="50" stroke-linecap="round" class="fill-none stroke-[20px] stroke-[url(#GradientColor)] stroke-dashed3"/>
+                        </svg>
+                        <h4 class="text-center mt-1 font-semibold font-montserrat dark:text-white">java Script</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+     <section class="pt-36 pb-16 " id="portfolio">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h1 class="text-2xl font-bold text-cyan-800 lg:text-3xl font-poppins dark:text-cyan-300">Portfolio</h1>
+                    <h2 class="font-bold text-3xl mb-4 dark:text-white">Latest Project</h2>
+                    <p class="font-semibold dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium alias ipsam doloribus veniam non, temporibus veritatis voluptatibus quisquam eligendi.</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 lg:flex lg:justify-center">
+                <div class="flex flex-wrap lg:flex-nowrap lg:flex-col">
+                    <button class=" button-pro m-[5px] shadow-sosmed w-[120px] h-[40px] dark:text-white">All</button>
+                    <button class="button-pro m-[5px] shadow-sosmed w-[120px] h-[40px] dark:text-white">Web</button>
+                    <button class="button-pro m-[5px] shadow-sosmed w-[120px] h-[40px] dark:text-white"> Design</button>
+                    <button class="button-pro m-[5px] shadow-sosmed w-[120px] h-[40px] dark:text-white">Mobile</button>
+                </div> 
+
+                <div class="flex gap-[25px] content-center items-center justify-center flex-wrap pt-6 lg:px-6 lg:pt-20 card-group" >
+
+                    <div class=" rounded-[25px] overflow-hidden relative transition-all duration-[0.5s] cursor-pointer w-[300px] h-[200px] hover:scale-[1.1] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] group card">
+                        <img src="./asset/Capture4.JPG" alt="" class="w-full h-full object-cover pointer-events-auto transition-all duration-[0.5s] hover:scale-[1.1]">
+                        <div class="bg-gradient-to-t from-black-transparent-50 to-black-transparent-0 absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-[0.3s] hover:scale-[1.1] group-hover:opacity-[0.5]"></div>
+                        <div class="absolute bottom-[-80px] p-[15px] opacity-0 transition-all custom-transition group-hover:bottom-0 group-hover:opacity-[1]">
+                            <h1 class="text-2xl font-bold text-cyan-800 font-poppins">Article</h1>
+                            <p class="font-semibold leading-tight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vel.</p>
+                            <button class="bg-cyan-800 rounded-[5px] px-6 py-2 text-white font-montserrat cursor-pointer duration-700 font-bold text-xs mt-[5px]">View</button>
+                        </div>
+                    </div>
+
+                    <div class=" rounded-[25px] overflow-hidden relative transition-all duration-[0.5s] cursor-pointer w-[300px] h-[200px] hover:scale-[1.1] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] group card">
+                        <img src="./asset/Capture1.JPG" alt="" class="w-full h-full object-cover pointer-events-auto transition-all duration-[0.5s] hover:scale-[1.1]">
+                        <div class="bg-gradient-to-t from-black-transparent-50 to-black-transparent-0 absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-[0.3s] hover:scale-[1.1] group-hover:opacity-[0.5]"></div>
+                        <div class="absolute bottom-[-80px] p-[15px] opacity-0 transition-all custom-transition group-hover:bottom-0 group-hover:opacity-[1]">
+                            <h1 class="text-2xl font-bold text-cyan-800 font-poppins">Article</h1>
+                            <p class="font-semibold leading-tight text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vel.</p>
+                            <button class="bg-cyan-800 rounded-[5px] px-6 py-2 text-white font-montserrat cursor-pointer duration-700 font-bold text-xs mt-[5px]">View</button>
+                        </div>
+                    </div>
+                    
+                    <div class=" rounded-[25px] overflow-hidden relative transition-all duration-[0.5s] cursor-pointer w-[300px] h-[200px] hover:scale-[1.1] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] group card">
+                        <img src="./asset/Capture5.JPG" alt="" class="w-full h-full object-cover pointer-events-auto transition-all duration-[0.5s] hover:scale-[1.1]">
+                        <div class="bg-gradient-to-t from-black-transparent-50 to-black-transparent-0 absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-[0.3s] hover:scale-[1.1] group-hover:opacity-[0.5]"></div>
+                        <div class="absolute bottom-[-80px] p-[15px] opacity-0 transition-all custom-transition group-hover:bottom-0 group-hover:opacity-[1]">
+                            <h1 class="text-2xl font-bold text-cyan-800 font-poppins">Food Resep</h1>
+                            <p class="font-semibold leading-tight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vel.</p>
+                            <button class="bg-cyan-800 rounded-[5px] px-6 py-2 text-white font-montserrat cursor-pointer duration-700 font-bold text-xs mt-[5px]">View</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- portfolio section end -->
+
+    <!-- service section start -->
+     <section class="pt-32 pb-16" id="service">
+        <div class="container ">
+            <div class="w-full px-4 pb-10">
+                <h1 class="text-2xl font-bold text-black font-poppins text-center lg:text-3xl dark:text-white">Our <span class="text-cyan-800 dark:text-cyan-300">Service</span></h1>
+            </div>
+            <div class="w-full px-4 py-4 flex flex-col md:flex-row md:justify-evenly md:flex-wrap items-center content-center">
+                <div class="w-[300px] h-[180px] flex flex-col items-center justify-around mb-10 py-2 rounded-[5px] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] bg-transparent overflow-hidden z-10 relative after-service group">
+                    <i class="fa-brands fa-html5 service-icon"></i>
+                    <h1 class="service-title">WEB DEVELOPMENT</h1>
+                    <a href="" class=" service-button">Book Service</a>
+                </div>
+                <div class="w-[300px] h-[180px] flex flex-col items-center justify-around mb-10 py-2 rounded-[5px] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] bg-transparent overflow-hidden z-10 relative after-service group">
+                    <i class="fa-brands fa-css3 service-icon"></i>
+                    <h1 class="service-title ">WEB DESIGNER</h1>
+                    <a href="" class=" service-button ">Book Service</a>
+                </div>
+                <div class="w-[300px] h-[180px] flex flex-col items-center justify-around mb-10 py-2 rounded-[5px] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] bg-transparent overflow-hidden z-10 relative after-service group">
+                    <i class="fa-brands fa-js service-icon"></i>
+                    <h1 class=" service-title ">APP DEVELOPMENT</h1>
+                    <a href="" class=" service-button ">Book Service</a>
+                </div>
+                <div class="w-[300px] h-[180px] flex flex-col items-center justify-around mb-10 py-2 rounded-[5px] shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] bg-transparent overflow-hidden z-10 relative after-service group">
+                    <i class="fa-solid fa-palette service-icon"></i>
+                    <h1 class=" service-title ">GRAPHIC DESIGN</h1>
+                    <a href="" class=" service-button ">Book Service</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- service section end -->
+
+    <!-- contact section start -->
+     <section class="pt-32 pb-16" id="contact">
+        <div class="container">
+            <div class="w-full px-4">
+                <h1 class="text-2xl font-bold text-black font-poppins text-center lg:text-3xl">Contact <span class="text-cyan-800">Us</span></h1>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex justify-center">
+                    <div class="flex flex-col m-1 items-center justify-center shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] py-2 bg-white rounded-[5px] w-[100px] ">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h1 class="font-bold font-poppins">Address</h1>
+                        <p class="text-xs  text-center">Makassar, South Sulawesi</p>
+                    </div>
+                    <div class="flex flex-col m-1 items-center justify-center shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] py-6 px-2 bg-white rounded-[5px] w-[100px] ">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h1 class="font-bold">Whatsapp</h1>
+                        <p class="text-xs">+628123456789</p>
+                    </div>
+                    <div class="flex flex-col m-1 items-center justify-center shadow-[5px_5px_10px_5px_rgba(0,0,0,0.3)] py-6 px-2 bg-white rounded-[5px] w-[125px] ">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h1 class="font-bold">Email</h1>
+                        <p class="text-xs">agustricip@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- contact section end -->
+
+
+
+    <script src="/dist/js/scrip.js"></script>
+</body>
+</html>

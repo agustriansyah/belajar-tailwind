@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+    .web-developer{
+        @apply relative text-cyan-800 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:animate-typing before:border-cyan-800 before:border-solid before:border-l-2 dark:before:bg-dark-color dark:before:border-cyan-300;
+    }
+    .hire-me{
+        @apply hover:text-white duration-300 before:content-[''] before:absolute before:w-full before:left-0 before:h-0 before:bg-cyan-800 before:-z-10 before:duration-700 before:top-0 before:rounded-bl-[50%] hover:before:h-[180%] dark:before:bg-cyan-300 dark:hover:text-black;
+    }
+    .sosial_media{
+        @apply w-[40px] h-[40px] bg-white rounded-full shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_10px_rgba(245,250,228)] flex justify-center items-center dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)]
+    }
+    .shadow-sosmed{
+        @apply hover:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(245,250,228)] 
+        dark:hover:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
+    }
+
+    /* Skills Start */
+    .outside-bar{
+        @apply h-[120px] w-[120px] rounded-[50%] border-[1px] border-solid dark:border-dark-color p-[20px] shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(245,250,228)] dark:shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.3),-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
+    }
+    .round-bar{
+        @apply h-[80px] w-[80px] rounded-[50%] border-[1px] border-solid dark:border-dark-color shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(245,250,228)] flex justify-center items-center dark:shadow-[inset_6px_6px_10px_-1px_rgba(0,0,0,0.3),inset_-6px_-6px_10px_-1px_rgba(0,0,0,0.3)];
+    }
+    /* Skill End */
+
+    /* service Start */
+    .service-icon{
+        @apply text-[60px] group-hover:text-white group-hover:duration-[2s] dark:text-white dark:group-hover:text-black
+    }
+    .service-title{
+        @apply text-xl font-bold font-poppins group-hover:text-white group-hover:duration-[2s] dark:text-white dark:group-hover:text-black
+    }
+    .service-button{
+        @apply rounded-[40px] px-6 py-2 text-white cursor-pointer font-bold text-xs group-hover:bg-white group-hover:text-black bg-black group-hover:duration-[2s] dark:bg-white dark:text-black dark:group-hover:bg-black dark:group-hover:text-white
+    }
+    .after-service{
+        @apply after:absolute after:content-[''] after:h-[70%] after:w-[20%] after:top-[-15%] after:left-[-5%] after:bg-cyan-800 after:rotate-[20deg] after:-z-[1] after:rounded-[50%] hover:after:w-[120%] hover:after:h-[150%] hover:after:rounded-none hover:after:rotate-0 after:duration-[0.1s] dark:after:bg-cyan-300
+    }
+    /* Service End */
+
+    .nav-blur{
+        @apply bg-white bg-opacity-70;
+        backdrop-filter: blur(5px);
+        box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+    }
+    .button-pro{
+        @apply border-cyan-800 rounded-[5px] px-4 py-2 text-black overflow-hidden font-montserrat cursor-pointer duration-700 font-bold text-sm shadow-[2px_2px_2px_rgba(0,0,0,0.3),-3px_-3px_2px_rgba(245,250,228)] hover:text-cyan-800 
+        dark:shadow-[2px_2px_2px_rgba(0,0,0,0.3),-3px_-3px_2px_rgba(0,0,0,0.3)] dark:hover:text-cyan-300
+    }
+    
+    .stroke-dashed {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 85; 
+    }
+    .stroke-dashed1 {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 150; 
+
+    }
+    .stroke-dashed2 {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 195; 
+    }
+    .stroke-dashed3 {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 330; 
+    }
+    .arrow-active > i{
+        @apply rotate-180;
+    }
+    .navbar-fixed{
+        @apply fixed z-[9999] bg-white bg-opacity-70 dark:bg-dark-color dark:bg-opacity-70;
+         backdrop-filter: blur(5px);
+         box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+    }
+    .custom-transition {
+        transition-property: bottom, opacity;
+        transition-duration: 0.5s, 1.75s;
+    }
+    .card-group:hover .card:not(:hover) {
+        filter: blur(5px);
+      }
+
+      :root {
+        --color: #9176FF;
+        --dark-color: #2b2b2b;
+        --dark-icon-color: #fff;
+        --light-color: #f7f7f7;
+        --light-icon-color: #FFDE59;
+      }
+
+      .icon-sun {
+        color: var(--light-icon-color);
+      }
+
+      .dark #btn_indicator{
+        transform: translateX(25px);
+        background-color: var(--dark-color);
+        box-shadow: 0 8px 40px rgba(0,0,0, .3);
+      }
+      .dark #btn_icon{
+        color: var(--dark-icon-color);
+      }
+      
