@@ -6,7 +6,7 @@
 
 
     .web-developer{
-        @apply relative text-cyan-800 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:animate-typing before:border-cyan-800 before:border-solid before:border-l-2 dark:before:bg-dark-color dark:before:border-cyan-300;
+        @apply relative text-cyan-800 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:animate-typing before:border-cyan-800 before:border-solid before:border-l-2 dark:before:bg-dark-color dark:before:border-cyan-300 -z-10;
     }
     .hire-me{
         @apply hover:text-white duration-300 before:content-[''] before:absolute before:w-full before:left-0 before:h-0 before:bg-cyan-800 before:-z-10 before:duration-700 before:top-0 before:rounded-bl-[50%] hover:before:h-[180%] dark:before:bg-cyan-300 dark:hover:text-black;
