@@ -30,6 +30,8 @@ module.exports = {
       animation: {
         typing: 'typing 3.5s steps(12) infinite',
         spin: 'spin 0.5s linear',
+        bounce1: 'bounce1 1.1s infinite',
+        bounce2: 'bounce2 1.2s infinite',
       },
       keyframes: {
       typing: {
@@ -44,6 +46,26 @@ module.exports = {
       spin: {
         '0%': { transform: 'rotate(0deg)' },
         '100%': { transform: 'rotate(360deg)' },
+      },
+      bounce1: {
+        '0%, 100%': {
+          transform: 'translateY(-25%)',
+          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+        },
+        '50%': {
+          transform: 'none',
+          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+        },
+      },
+      bounce2: {
+        '0%, 100%': {
+          transform: 'translateY(-25%)',
+          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+        },
+        '50%': {
+          transform: 'none',
+          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+        },
       },
     },
       boxShadow:{

@@ -1,4 +1,4 @@
-// Menangani scroll
+// scroll
 window.onscroll = function() {
   const header = document.querySelector('header');
   if (header) {
@@ -11,7 +11,7 @@ window.onscroll = function() {
   }
 }
 
-// Menangani hamburger menu
+// arrow menu
 const arrow = document.querySelector('#arrow');
 const navMenu = document.querySelector('#nav-menu');
 
@@ -22,17 +22,16 @@ if (arrow && navMenu) {
   });
 }
 
-// Menangani toggle mode gelap
+// dark mode
 const html = document.querySelector('html');
 const btn = document.querySelector('#btn');
 const icon = document.querySelector('#btn_icon');
 
-// Simpan status mode gelap ke localStorage
 function store(value) {
 localStorage.setItem('dark', value);
 }
 
-// Muat status mode gelap dari localStorage
+
 function load() {
 const dark = localStorage.getItem('dark');
 
@@ -47,7 +46,7 @@ if (dark === 'true') {
 
 load();
 
-// Toggle mode gelap saat tombol diklik
+
 if (btn && icon) {
   btn.addEventListener('click', () => {
       html.classList.toggle('dark');
@@ -68,13 +67,4 @@ if (btn && icon) {
       }, 500);
   });
 }
-
-
-
-
-
-
-
-
-
 
